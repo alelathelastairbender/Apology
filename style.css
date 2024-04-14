@@ -1,0 +1,27 @@
+.main-container {
+    border: 1px solid black;
+    height: 896px;
+    /* background-image: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apology-container {
+    border: 2px red solid;
+    width: 50%;
+    padding: 10px;
+}
+
+
+button {
+    background-color: palevioletred;
+    border: 0;;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+
+.button2 {
+    position:relative;
+}
