@@ -1,25 +1,32 @@
 const button = document.querySelector('.button2');
 
+const button1 = document.querySelector('.button1');
+
+let fontSize = 18;
+const increment = 8;
+
 button.addEventListener('click', function() {
-    const randomTop = Math.floor(Math.random() * innerHeight) + 'px';
-    const randomLeft = Math.floor(Math.random() * innerWidth) + 'px';
-
-    this.style.top = randomTop;
-    this.style.left = randomLeft;
-
-    console.log(randomLeft);
-    console.log(randomTop);
+    fontSize += increment;
+    button1.style.fontSize = fontSize + 'px';
     
 });
 
-const button1 = document.querySelector('.button1');
 
 const element = document.querySelector('.Canvas');
 
 const apologyElement = document.querySelector('.apology-container');
 
+const heading = document.querySelector('.heading');
+
+const image = document.querySelector('.image');
+
+const paragraph = document.querySelector('.paragraph')
+
 button1.addEventListener('click', function() {
     apologyElement.style.visibility = "hidden";
+    heading.style.display = "inline";
+    image.style.display = "inline";
+    paragraph.style.display = "inline";
 
     var c = document.getElementById("Canvas");
     c.style.visibility = "visible";
@@ -136,4 +143,4 @@ function Run() {
 }
 });
 
-// Fireworks animation
+ 
