@@ -8,5 +8,6 @@ button.addEventListener('click', function() {
     this.style.left = randomLeft;
 
     console.log(randomLeft);
+    console.log(randomTop);
     
 });
